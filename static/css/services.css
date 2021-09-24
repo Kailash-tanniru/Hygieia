@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+   
+}
+body{
+    background-color: #EEEEEE;
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    background-color: #2C394B;
+}
+.heading{
+    display:flex;
+    justify-content: center;
+   
+}
+.logo{
+    padding-top: 10px;
+    
+}
+.title{
+    padding-left: 15px;
+    padding-top: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color:#FFF8E5;
+}
+@media (max-width:940px) 
+{
+    .title{
+        font-size : 2vw;
+
+    }
+}
+
+.services{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    
+}
+.predict{
+    height: 500px;
+    width: 45%;
+    background-image: url('predict.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.pre{
+    color:#B1FFFD;
+}
+.pre:active{
+    color: white;
+}
+.pre:hover{
+    color:#FF2442;
+    background: white;
+    transition: 0.1s;
+}
+.med:active{
+    color:black;
+}
+.med:hover{
+    color:#FF2442;
+    background: white;
+    transition: 0.1s;
+
+}
+
+.medicine{
+    height: 500px;
+    width: 45%;
+    background-image: url('medicine.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 25px;
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.med{
+    color:#B1FFFD;
+}
+@media (max-width:940px) {
+    .services{
+        display: block;
+    }
+    .predict{
+        width: 100%;
+        padding-top: 50vh;
+        font-size: 5vw;
+        
+    }
+    .medicine{
+        width: 100%;
+        padding-top: 50vh;
+        font-size: 5vw;
+    }
+}

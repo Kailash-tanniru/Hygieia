@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hygieia</title>
+	<link rel="icon" href="{% static 'images/icon/icon.ico' %}">
+	<link rel="stylesheet" href="{%  static 'css/home.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+	<!--Website title and navigation bar-->
+	<nav>
+		<div class="Logo">
+			<h1><span class="span">H</span>ygieia</h1>
+		</div>
+		<input type="checkbox" id='click'>
+		<label for='click' class="menu-btn"><i class="fas fa-bars"></i></label>
+		<ul class="Links">
+			<li><a href="#intro">HOME</a></li>
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+			<li><a id='services' href="{% url 'services' %}">SERVICES</a></li>
+			<!--<li><a href="#">SIGNIN</a></li>-->
+		</ul>
+	</nav>
+	
+	<!--Intro Content-->
+	<div id="intro" class="intro">
+		<div class="content">
+			<h1>Welcome to <span class='title'>Hygieia </span></h1>
+			<h2 style="color:#F3F0D7">(The goddess of health)</h2>
+		</div>	
+	</div>
+	<!--Description content-->
+	<div class="quotation">
+	  <div class="container-1">
+		<div class="quote">
+         <h1>"He who has health, has hope; and he who has hope, has everything."</h1>
+	      <label class="author">-Thomas Carlyl</label>
+		</div>
+	   </div>
+    </div>
+	<!--concept of website-->
+	<div class="theme">
+		<div class="health">
+			<div class="pic">
+				<img src="{% static 'images/health.jpg' %}" alt="health">
+			</div>
+			<div class="content">
+				<p>Health is very vital, though it isn't everything,though it isn't everything.
+					without it all is nothing. Health is equated to supreme wealth that is non-stealable
+					and often non inheritable. The world 'Health' comes from root word 'whole'.Feeling healthy
+					is a sense of wholeness of four dimensions making a construct, the human being.
+					The rigth balance of all, physical,mental, social, spiritual renders the graph a square.
+				</p>
+			</div>
+		</div>
+		<div id='about'class="about">
+			<h1 class="label">Our Ideology</h1>
+			<div class='pict'>
+			   <img  src="{% static 'images/tablets.jpg' %}" alt="ana" >
+			</div>
+			<div class="matter">
+				<h3><span>Hygieia</span> Provides you a better way to live and it helps to track your
+					health acccuratly.
+					Hygieia uses machine learning algorithms to predict the result acccuratly.Our main idea is 
+					to provide better life to <span>people</span>.
+			</div>
+		</div> 
+	</div>
+	<!--services-->\
+	<div class="product">
+		<h1>OUR PRODUCTS</h1>
+	</div>
+	<div class="services">
+		
+		<div class="ser1">
+		  <div class="newton">
+			  <a href=""><h1>Lisa</h1></a> 
+			  <span>(The health predictor)</span>
+		  </div>
+		</div>	
+	</div>
+	
+	
+
+
+	<!--About products-->
+	
+	<!--About products-->
+
+	<!--footer-->
+	<div id='foot'class="foot">
+		<div class="row">
+			<div class="column1">
+				 <h3>SERVICES</h3>
+				 <ul class='footer'>
+					 <li><a href="#home">PREDICTIONS</a></li>
+					 <li><a href="#about">MEDICINE</a></li>
+				 </ul>
+			</div>
+			<div id = 'contact' class="column2">
+				<h3>Contact</h3>
+				<ul>
+					<li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://www.instagram.com/tanniru_kailash/"target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/kailashtanniru/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+					<li><a href="mailto: tannirukailash@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+				</ul>
+		   </div>
+		</div>
+		<p class="copyright">Copyright @ Kailash Tanniru</p>
+	</div>
+	<!--footer-->
+	   
+	
+</body>
+</html>

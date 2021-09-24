@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+
+}
+body{
+    background-image: url("result_2.jpg");
+    
+}
+.container{
+    display: flex;
+   width: 60%;
+   height: 500px;
+   align-items: center;
+   justify-content: center;
+   position:absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: #B1FFFD;
+   
+   
+   justify-content: space-around;
+}
+.container .emoji{
+    padding-right: 100px;
+    background-color: #FFF8E5;
+    height: 500px;
+    width: 500px;
+    
+}
+.container .emoji .image img{
+   position: absolute;
+   top:50%;
+   left: 25%;
+   transform: translate(-50%,-50%);
+   height: 15vw;
+
+    
+}
+
+.container .content{
+    background-color: #F7F6F2;
+    height: 500px;
+    width: 500px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+.content .board{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.content .board span{
+    color:#80ED99;
+}
+.result{
+    align-items: center;
+    padding-top: 20%;
+    padding-left: 30px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+.result .h2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.result .h2 span{
+    color : #B1FFFD;
+}
+.safe{
+    padding-top: 10%;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diabetes Prediction</title>
+        <link rel="icon" href="{% static 'images/icon/diabetes.ico' %}">
+        <link rel="stylesheet" href="{%  static 'css/diabetespred.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body>
+        <div class="form">
+            
+            <form action="{% url 'predict' %}" id="" method="POST" class='form_container'>
+                {% csrf_token %}
+                {{form}}
+                <h1 class="title">DIABETES PREDICTION</h1>
+                <div class="fields">
+                    <input type="text" class="form_input" placeholder="No of Pregnancies(0-17)" autocomplete="off" name = 'pregnancies' required>
+                   <!-- <label for="" class="form_label">Pregnancies</label> -->
+                </div>
+                <div class="fields">
+                    <input type="text" class="form_input" placeholder="Glucose Level(0-199)"autocomplete="off" name = 'glucose level'required>
+                   <!-- <label for="" class="form_label">Glucose Level</label> -->
+                </div>
+                <div class="fields">
+                    <input type="text" class="form_input" placeholder="Blood pressure(0-122)"autocomplete="off" name = 'blood pressure'required>
+                    <!--<label for="" class="form_label">Blood Pressure</label> -->
+                </div>
+                <div class="fields">
+                    <input type="text" class="form_input" placeholder="Skin Thickness(0-100)" autocomplete="off" name = 'skinthickness'required>
+                    <!--<label for="" class="form_label">Skin thickness</label> -->
+                </div>
+                <div class="fields">
+                    <input type="text" class="form_input" placeholder="Insulin Level(0-846)" autocomplete="off" name = 'insulin'required>
+                    <!--<label for="" class="form_label">Insulin Level</label> -->
+                </div>
+                <div class="fields">
+                    <input type="text" class="form_input" placeholder="BMI(0-67.10)" autocomplete="off" name = 'bmi' required>
+                   <!--<label for="" class="form_label">BMI</label> -->
+                </div>
+                <div class="fields">
+                    <input type="text" class="form_input" placeholder="DPF(0.078-2.420)" autocomplete="off"  name = 'dpf' required>
+                    <!--<label for="" class="form_label">DPF</label> -->
+                </div>
+                <div class="fields">
+                    <input type="text" class="form_input" placeholder="Age(21-81)" autocomplete="off" name = 'age' required>
+                    <!--<label for="" class="form_label">Age</label> -->
+                </div>
+                <input type="submit" id='btn' class="predict" value='Predict' >
+            </form>
+        </div>
+</div>
+</html>

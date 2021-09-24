@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Predictions</title>
+        <link rel="icon" href="{% static 'images/icon/prediction.ico' %}">
+        <link rel="stylesheet" href="{%  static 'css/robot.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+
+    <body>  
+        <div class="nav-bar">
+            <div class="app_title"> 
+                <h1>Health Predictions</h1>
+            </div>
+           
+        </div>
+
+      <div class="nav">
+          <div class="pred">
+
+          </div>
+        <div class="title">
+            <h1>LISA</h1>
+        </div>
+      </div>
+      <div class="health_predictions">
+          <div class="diabetes">
+            <div class="disease_name">
+                <h1>DIABETES</h1>
+            </div>
+            <div class="predict">
+                <button><a href="{% url 'diabetes'%}" class="diab_predict"><h1 >PREDICT</h1></a></button>
+            </div>
+              
+          </div>
+
+      </div>
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+
+{% extends 'pages/diabetes/diabetes_result.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="container">
+    <div class="emoji">
+        <div class="image">
+            <img src="{% static 'images/results/Diabetes result/happy.png' %}" alt="image">
+        </div>
+    </div>
+    <div class="content">
+        <h1 class='board'><span style="color: red;">Result</span> Board</h1>
+        <div class="result">
+            <h2>Prediction Analysis: <span>{{content }}</span> Diabetic</h2>
+            <br>
+            <h1 class="safe">Stay safe!!!Stay Healthy</h1>
+        </div>
+        
+    </div>
+</div>
+
+{% endblock %}

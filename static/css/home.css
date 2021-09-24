@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital@1&family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('http://fonts.cdnfonts.com/css/quote');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+   
+}
+html,body{
+width: 100%;
+align-items: center;
+}
+
+/*NAVIAGATION BAR*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 9vh;
+    height: 80px;
+    width: 100%;
+    background-color: #A2DBFA;
+    padding: 0px 50px 0px 100px;
+   
+}
+
+.Logo{
+  
+    color: #171717;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+    
+}
+nav .menu-btn i
+{
+    color:#fff;
+    display: none;
+    cursor: pointer;
+  
+  
+}
+.span{
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    color: #3DB2FF;
+   
+}
+nav .Links{
+    display: flex;
+    margin: 0px 15px;
+}
+.Links li{
+   font-family: 'Open Sans', sans-serif;
+   margin: 0px 10px;
+}
+.Links li a{
+    font-size: 15px;
+    color: #423F3E;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding:8px 10px;
+    border-radius: 5px;
+}
+
+.Links li a:hover{
+    color:#F7F6F2; 
+    transition: .1s;
+}
+#click{
+    display: none;
+}
+@media (max-width:940px) {
+    nav{
+        justify-content: space-around;
+        padding: 0px 0px 0px 10px;
+        
+    }
+   nav .logo .span{
+       padding: auto;
+   }
+    nav .Links{
+        margin: 0px;
+        padding: 0px;
+        position: fixed;
+        top:80px;
+        right:-100%;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        background-color: #334756;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+    right: 0%;
+    }
+    nav .Links li{
+        margin: 40px 0;
+    }
+    nav .Links li a{
+        color: tomato;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+    }
+    .Links li a:hover{
+        color:#2C394B;
+        background: white;
+        transition: .1s;
+    }
+    nav .menu-btn i{
+        color:#082032;
+        display: block;
+        cursor: pointer;
+        
+    }
+    #click:checked ~ .menu-btn i:before{
+        content:"\f00d";
+    }
+}
+/*NAVIAGATION BAR (END)*/
+/*Intro page Content Styling*/
+.intro{
+    
+    width: 100%;
+    height: 37vw;
+    background-image: url("health.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    /* This is what makes the background image rescale based
+    on the container's size */
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0px 50px 0px ;
+    text-align: center;
+    margin: 2px 0px 0px 0px ;
+  
+}
+ .content{
+    font-size: 3vw;
+    font-family: 'Poppins', sans-serif;
+    color: #FFEDDA;
+}
+.content .title{
+    color:#FF2442;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+/*Intro page Content Styling (END)*/
+
+
+
+/*Container_1*/
+.quotation{
+    width: 100%;
+    height: 500px;
+    background-color: #F3F1F5;
+    margin: 2px 0px 1px 0px;
+    padding:0px 7px 0px 5px;
+}
+.container-1
+{
+    height: 500px;
+    width: 100%;
+    background-color: #222831;
+   
+}
+.container-1 .quote{
+    color: #DEEEEA;
+    padding: 100px;
+    font-size: 2vw;
+    font-family: 'Quote', sans-serif;
+}
+.container-1 .author{
+    color:white;
+    float: right;
+    padding:0px 50px 0px 0px;
+    font-family: 'Style Script', cursive;
+    font-size: 4vw;
+    text-transform: capitalize;
+    text-align: right;
+}
+@media (max-width:960px)
+{
+    .container-1{
+        height: auto;
+    }
+    .quotation{
+        height: auto;
+       
+    }
+}
+/*Container-2 (END)*/
+
+/*concept of website*/
+
+
+img{
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+.health{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    padding-top: 100px;
+
+}
+.pic
+{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 0px 50px 0px 50px;  
+}
+.health .content{
+    padding:10px 10px 0px  10px;
+    font-size: 25px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+@media (max-width:1000px)
+{
+   .health{
+       display: block;
+       margin-bottom: 100px;
+       
+       
+   }
+   .pic{
+       margin-left: auto;
+       margin-right: auto;
+      width: 100%;
+   }
+   .health .content{
+       font-size: 14px;
+       
+   }
+}
+hr.style14 { 
+    border: 0; 
+    height: 2px; 
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+  }
+
+.about{
+    
+    height: 800px;
+    width: 100%;
+    background-image: url("diease.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    /* This is what makes the background image rescale based
+    on the container's size */
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-left: 5px;
+    
+  
+    
+}
+.about .pic
+{
+    width: 100%;
+    height: auto;
+    padding: 0px 50px 0px 50px;  
+}
+
+
+.label{
+    color: #E8F6EF;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    
+
+}
+.about .pict{
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+.matter{
+    
+    color: white;
+    text-align: center;
+    font-size:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.matter span{
+    color:red;
+
+}
+@media (max-width:960px)
+{
+   .about{
+       display: block;
+       height: 600px;
+       padding-top: 0px;
+       
+   }
+   .about .pict{
+     
+      height: auto;
+      width: 50%;
+      
+     
+   }
+  .matter{
+    font-size:14px;
+       
+   }
+}
+.product{
+    color: #EEEEEE;
+    width: 100%;
+    background-color: black;
+    height: 100px; 
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.services{
+    display: flex;
+    margin-top: 0px;
+    width: 100%;
+    height: 700px;
+    background-color:black;
+    justify-content: center;
+    padding:0px 10px 0px 10px;
+}
+.ser1{
+    
+    width: 50%;
+    margin-right: 10px;
+    height: 500px;
+    border-radius: 10px;
+    background-image: url("prediction.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    /* This is what makes the background image rescale based
+    on the container's size */
+    background-size: cover;
+    
+}
+.newton{
+    font-size: 30px;
+    font-style: normal;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    padding-top: 150px;
+    color:#FDEFEF;
+}
+.newton a {
+    color:#FDEFEF;
+}
+.newton a:hover{
+color: red;
+transition: .50s;
+}
+.newton 
+\a:active{
+    color:black;
+}
+.newton span{
+    color :#FAFF00;
+}
+@media (max-width:960px)
+{
+   .ser1{
+       display: block;
+       width: 100%;
+
+   }
+}
+.ser2{
+   
+    width: 50%;
+    height: 500px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+/*footer*/
+
+.foot{
+    width: 100%;
+    height:300px;
+    background-color: #E1E8EB;
+    margin-top: 10px;
+}
+
+.row{
+
+    display: flex;
+    justify-content: space-around;
+   padding-top: 30px;
+}
+.column1 h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; 
+}
+.column1 ul li{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px ;
+    text-transform: capitalize;
+   
+}
+.column1 ul li a{
+    color: #082032;
+}
+
+.column2 h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; 
+}
+.column2 ul li{
+    display: inline-flex;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.copyright{
+    color: #444444;
+    text-align: center;
+    padding-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*footer(END)*/
